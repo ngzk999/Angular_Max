@@ -14,7 +14,7 @@
     <p *ngIf="displaySecret">Secret Password = tuna</p>
 
     <ol>
-      <li *ngFor="let log of logs; let i = index;" [ngStyle]="{'background': i >= 4 ? 'blue' : ''}" [ngClass]="i >= 4 ? 'text-white' : ''">{{log}}</li>
+      <li *ngFor="let log of logs; let i = index;" [ngStyle]="{'background': i >= 5 ? 'blue' : ''}" [ngClass]="i >= 5 ? 'text-white' : ''">{{log}}</li>
     </ol>
   </div>
 </div>
