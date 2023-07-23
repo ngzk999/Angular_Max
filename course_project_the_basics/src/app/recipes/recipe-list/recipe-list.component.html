@@ -8,17 +8,8 @@
 
 <div class="row">
     <div class="col-xs-12">
-        <div href="#" class="list-group clearfix" *ngFor="let recipe of recipes">
-            <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                <div class="me-auto my-auto">
-                    <h4 class="fw-bold">{{ recipe.name }}</h4>
-                    <p>{{ recipe.description }}</p>
-                </div>
-                <span>
-                    <img [src]="recipe.imagePath" alt="{{ recipe.name }}" class="img-fluid" style="max-height: 50px;">
-                </span>
-            </a>
+        <div href="#" class="list-group clearfix" >
+            <app-recipe-item *ngFor="let recipeEl of recipes" [recipe]="recipeEl" (recipeSelected)="onNavigate($event)"></app-recipe-item>
         </div>
-        <app-recipe-item></app-recipe-item>
     </div>
 </div>
