@@ -22,7 +22,7 @@ export class ShoppingEditComponent implements OnInit {
       amount: this.amountInput.nativeElement.value,
     };
 
-    this.shoppingListService.addIngredients(ingredientToAdd);
+    this.shoppingListService.addIngredient(ingredientToAdd);
   }
 
 }
